@@ -324,3 +324,62 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 
 ---
 
+### **Part 9 — Robustness**
+
+#### 🔹 **Handling Very Short Text (e.g., “ok”, “fine”)**
+
+* Short inputs provide **limited semantic information**, making prediction difficult.
+* The system handles this by:
+
+  * Relying more on **metadata features** (stress, energy, time of day)
+  * Using **engineered features** such as `text_length` and `word_count` to detect low-information inputs
+  * Leveraging **confidence scores**:
+
+    * Low confidence → `uncertain_flag = 1`
+* In such cases, the Decision Engine:
+
+  * Avoids strong recommendations
+  * Provides **safe, generic actions** (e.g., pause, light breathing)
+
+---
+
+#### 🔹 **Handling Missing Values**
+
+* Missing data is handled during preprocessing to ensure stability:
+
+  * `sleep_hours` → filled with **median values**
+  * `previous_day_mood` → filled with **"unknown"**
+  * `face_emotion_hint` → filled with **"missing"**
+
+* Benefits:
+
+  * Prevents model failure due to null values
+  * Maintains consistency across training and inference
+  * Allows the model to treat missingness as a **valid signal**
+
+---
+
+#### 🔹 **Handling Contradictory Inputs**
+
+* Contradictions may occur when:
+
+  * Text suggests negative emotion but stress is low
+  * High energy but low mood
+  * Mixed emotional expressions in text
+
+* The system addresses this using:
+
+  * **Combined feature learning** (text + metadata)
+  * **Engineered features** (e.g., stress-energy ratio, emotional signal)
+  * **Uncertainty modeling**:
+
+    * Conflicting signals → lower confidence → `uncertain_flag = 1`
+
+* Decision Engine behavior:
+
+  * Avoids extreme actions
+  * Recommends **balanced interventions** (e.g., light activity, grounding)
+  * Prioritizes **safe and non-invasive suggestions**
+
+---
+
