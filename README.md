@@ -26,6 +26,37 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 
 ---
 
+#### 📝 **Note**
+
+* Previously I developed a **Digital Wellness Prototype** using structured behavioral data such as:
+
+  * screen time, frequency, distraction, anxiety, depression, sleep patterns, and social media usage
+
+* Applied **clustering techniques** to segment users into risk categories:
+
+  * *Healthy, Mild Risk, Moderate Risk, High Risk, Critical Risk*
+
+* Built a **classification model** on top of these segments, achieving **~92% accuracy**, indicating strong predictive power from structured behavioral signals
+
+* Further enhanced the system using **LLM-based personalized recommendations**, adapting to user behavior and usage patterns
+
+* Compared to the current assignment dataset:
+
+  * The previous dataset was **purely metadata-driven (no text)** and more **quantitative**, leading to higher accuracy
+  * The current dataset is **text + context-based**, focusing on **moment-level wellness decisions**
+
+* **Key Insight**:
+
+  * While the current system is effective for **real-time intervention**,
+  * Incorporating richer behavioral metadata (as in the previous prototype) can:
+
+    * Improve model accuracy
+    * Strengthen decision logic
+    * Reduce error cases
+    * Enable more **insightful and personalized recommendations**
+
+
+---
 ###  **Methodology (Solution)**
 
 * Processed user inputs combining **journal text and contextual signals** (energy level, stress level, time of day, sleep, previous mood) to capture both emotional and situational context.
