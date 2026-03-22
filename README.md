@@ -260,7 +260,7 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 ---
 
 
-### Edge / Offline Thinking Plan
+### Part 8 — Edge / Offline Thinking Plan
 
 ```text
                     📱 Mobile Device (On-Device Execution)
