@@ -231,12 +231,12 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 
 * Increase dataset size with **richer and longer text samples**
 * Improve **label consistency** for intensity
-* Add behavioral features:
+* Add more features (like):
 
-  * screen time
-  * anxiety score
-  * focus level
-
+  * Habit patterns
+  * Behavioral addiction
+  * Lifestyle risks
+  
 ---
 
 #### 🔧 Modeling Improvements
