@@ -227,7 +227,7 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 
 #### 🔹 **4. How to Improve**
 
-### 🔧 Data Improvements
+#### 🔧 Data Improvements
 
 * Increase dataset size with **richer and longer text samples**
 * Improve **label consistency** for intensity
