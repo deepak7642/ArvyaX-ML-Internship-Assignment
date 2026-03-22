@@ -259,3 +259,68 @@ At ArvyaX, we are building AI systems that go beyond prediction.
 
 ---
 
+
+### Edge / Offline Thinking Plan
+
+```text
+                    📱 Mobile Device (On-Device Execution)
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│   👤 User Input Layer                                        │
+│   ─────────────────────                                      │
+│   • Journal Text                                             │
+│   • Energy Level                                             │
+│   • Stress Level                                             │
+│   • Time of Day                                              │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   🧹 Preprocessing Layer                                     │
+│   ─────────────────────                                      │
+│   • Missing Value Handling                                   │
+│   • Text Cleaning                                            │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   ⚙️ Feature Engineering Layer                               │
+│   ───────────────────────────                                │
+│   • NLP Features (Text Vectorization)                        │
+│   • Engineered Features (ratios, sentiment, etc.)            │
+│   • Metadata Features                                        │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   🤖 ML/NLP Prediction Layer                                 │
+│   ─────────────────────────                                  │
+│   • Emotional State Prediction                               │
+│   • Intensity Prediction                                     │
+│   • Confidence Score Generation                              │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   ⚠️ Uncertainty Module                                      │
+│   ─────────────────────                                      │
+│   • Confidence Thresholding                                  │
+│   • Uncertain Flag Detection                                 │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   🧠 Decision Engine (What + When)                           │
+│   ─────────────────────                                      │
+│   • What to Do                                               │
+│   • When to Do                                               │
+│   • Context-Aware Logic                                      │
+│                                                              │
+│                │                                             │
+│                ▼                                             │
+│   💬 Output Layer                                            │
+│   ─────────────────────                                      │
+│   • Action Recommendation                                    │
+│   • Timing Suggestion                                        │
+│   • Supportive Message                                       │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
